@@ -1,0 +1,222 @@
+/* src/components/Dashboard/Transfer/Transfer.css */
+.transfer-screen-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #018080 0%, #ffffff 100%);
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    position: relative;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .back-button:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  
+  .transfer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    text-align: center;
+  }
+  
+  .wallet-transfer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .transfer-logo {
+    font-size: 0;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .transfer-title {
+    font-size: 64px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: -100px;
+  }
+  
+  .transfer-subtitle {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: -20px;
+  }
+  
+  .transfer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .transfer-option {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .transfer-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .option-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #018080;
+    margin-bottom: 10px;
+  }
+  
+  .split-transfer-container {
+    display: flex;
+    width: 100%;
+    margin-top: -50px;
+    gap: 20px;
+  }
+  
+  .transfer-left-column {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .transfer-middle-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .transfer-right-column {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #018080;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+  }
+  
+  .input-field:focus {
+    border-bottom-color: #016767;
+  }
+  
+  .transfer-button {
+    width: 100%;
+    padding: 15px;
+    background: #018080;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .transfer-button:hover {
+    background: #016767;
+  }
+  
+  /* Hamburger button styles */
+  .hamburger-button {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    background: transparent;
+    border: none;
+    width: 56px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 100;
+    padding: 6px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .hamburger-button span {
+    display: block;
+    height: 6px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform-origin: center;
+  }
+  
+  .hamburger-button:hover span {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .hamburger-button:hover span:nth-child(1) {
+    transform: translateY(4px);
+  }
+  
+  .hamburger-button:hover span:nth-child(3) {
+    transform: translateY(-4px);
+  }
+  
+  .hamburger-button.open span:nth-child(1) {
+    transform: translateY(19px) rotate(45deg);
+  }
+  
+  .hamburger-button.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-button.open span:nth-child(3) {
+    transform: translateY(-19px) rotate(-45deg);
+  }
